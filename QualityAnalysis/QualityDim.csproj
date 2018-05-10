@@ -1,0 +1,239 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E9D4B10-10A9-43C1-A23D-1A36A1D6EAFA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QualityDim</RootNamespace>
+    <AssemblyName>QualityAnalysis</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Win.UltraWinChart.v9.2, Version=9.2.20092.1003, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="MathLib, Version=0.17.1304.40806, Culture=neutral, PublicKeyToken=7f9da1c2d344b943" />
+    <Reference Include="MathNet.Iridium, Version=2008.8.16.470, Culture=neutral, PublicKeyToken=c061a3ec32cc0c6f, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="NPlot, Version=0.9.10.0, Culture=neutral, PublicKeyToken=4eda430eb4395eb1, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="D3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D3Form.Designer.cs">
+      <DependentUpon>D3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClustForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClustForm.Designer.cs">
+      <DependentUpon>ClustForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="D3PropForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="D3PropForm.Designer.cs">
+      <DependentUpon>D3PropForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H2DForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H2DForm.designer.cs">
+      <DependentUpon>H2DForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H3DForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H3DForm.designer.cs">
+      <DependentUpon>H3DForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H2DPropForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H2DPropForm.Designer.cs">
+      <DependentUpon>H2DPropForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenForm.designer.cs">
+      <DependentUpon>GenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H3DPropForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="H3DPropForm.Designer.cs">
+      <DependentUpon>H3DPropForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IdForm.Designer.cs">
+      <DependentUpon>IdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LegendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegendForm.Designer.cs">
+      <DependentUpon>LegendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QMinMaxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QMinMaxForm.Designer.cs">
+      <DependentUpon>QMinMaxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReplForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReplForm.Designer.cs">
+      <DependentUpon>ReplForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WBForm.Designer.cs">
+      <DependentUpon>WBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="D3Form.resx">
+      <DependentUpon>D3Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClustForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClustForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="D3PropForm.resx">
+      <DependentUpon>D3PropForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H2DForm.resx">
+      <DependentUpon>H2DForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H3DForm.resx">
+      <DependentUpon>H3DForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H2DPropForm.resx">
+      <DependentUpon>H2DPropForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="H3DPropForm.resx">
+      <DependentUpon>H3DPropForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdForm.resx">
+      <DependentUpon>IdForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegendForm.resx">
+      <DependentUpon>LegendForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="QMinMaxForm.resx">
+      <DependentUpon>QMinMaxForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReplForm.resx">
+      <DependentUpon>ReplForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WBForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WBForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Texture1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Legend.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
